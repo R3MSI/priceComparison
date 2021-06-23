@@ -1,6 +1,8 @@
 # priceComparison
 
-After entering the steam game id, it shows the price of steam and other sites where it can cost less.
+After download the file and run it, entering the steam game id, it shows the price of steam and other sites where it can cost less.
+
+(_The code is a bit dirty_)
 
 ### Manually install and Run using CLI
 ```
