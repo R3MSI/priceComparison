@@ -39,14 +39,14 @@ try:
     while True:
         try:
             print('\033[39m')
-            steamID = int(input("Steam ID (gioco): "))
+            steamID = int(input("Steam ID (game): "))
             for appid in range(len(steamGames['applist']['apps'])):
                 if(steamID == steamGames["applist"]["apps"][appid]["appid"]):
                     print(  "Name:", steamGames["applist"]["apps"][appid]["name"],
                             "\nSteamID:", steamGames["applist"]["apps"][appid]["appid"], "\n")
                     priceComparison(steamGames["applist"]["apps"][appid]["name"], steamGames["applist"]["apps"][appid]["appid"])
         except ValueError:
-            print("Inserire un valore intero\n")
+            print("Int Value\n")
 except KeyboardInterrupt:
     # quit
     sys.exit()
