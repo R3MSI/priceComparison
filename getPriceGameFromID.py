@@ -45,6 +45,7 @@ try:
                     print(  "Name:", steamGames["applist"]["apps"][appid]["name"],
                             "\nSteamID:", steamGames["applist"]["apps"][appid]["appid"], "\n")
                     priceComparison(steamGames["applist"]["apps"][appid]["name"], steamGames["applist"]["apps"][appid]["appid"])
+                    break
         except ValueError:
             print("Int Value\n")
 except KeyboardInterrupt:
