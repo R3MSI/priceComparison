@@ -13,9 +13,6 @@ steamGames = json.loads(response)
 # length json file elements
 #print(len(steamGames['applist']['apps']))
 
-# api 
-#https://www.allkeyshop.com/api/latest/vaks.php?action=products&showOffers=1&showVouchers=false&locale=en_GB&currency=eur&apiKey=vaks_extension&search=outer%20wilds
-
 def priceComparison(nameG, appID):
     steamStoreGame = 'https://store.steampowered.com/api/appdetails?appids='+str(appID)
     rSteamStoreGame = urllib.request.urlopen(steamStoreGame).read()
